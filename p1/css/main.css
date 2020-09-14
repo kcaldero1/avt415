@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(110deg, #ffffb3 30%, #ffd480 30%);
+}
+h1 {
+    color: #ff6600;
+    font-size: 90px;
+ text-transform: uppercase;
+}
+h2 {
+    color: #e68a00;
+    font-size: 40px;
+  text-transform: uppercase;
+}
+p {
+  color: #ff6600;
+  font-size: 90px;
+  font-family: "Arial Black", Gadget, sans-serif;
+   letter-spacing: .5px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #800080;
+}

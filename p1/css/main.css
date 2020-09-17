@@ -23,3 +23,12 @@ a {
 a:link {
   color: #800080;
 }
+a:visited {
+  color: dodgerblue;
+}
+a:hover {
+  color: whitesmoke;
+}
+a:active {
+  color: whitesmoke;
+}

@@ -8,21 +8,7 @@ ul {
     letter-spacing: .5px;
     line-height: 2.0;
 }
-p {
-   position: center;
-   left: 0;
-   right: 25px;
-   margin: 50px;
-   float: right;
-   vertical-align: middle;
-}
-p2 {
-  position: center;
-  left: 0;
-  right: 25px;
-  margin: 50px;
-  float: left;
-}
+
 html {
     height: 100%;
     overflow: hidden;

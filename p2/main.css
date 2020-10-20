@@ -1,4 +1,36 @@
-body{
-  background-image: url("image/f1.jpg");
-  background-size: cover;
+img {
+ max-width: 50%;
+ max-height: auto;
+ margin-left: 200px;
+ margin-right: 200px;
 }
+
+body{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: sans-serif;
+  background-color: white;
+  vertical-align: middle;
+}
+h1 {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  margin-left: 375px;
+  font-family: sans-serif;
+}
+#p5 .shape1{
+  background-color: #658559;
+  width: 100px;
+  height: 100px;
+  margin: -15px -3.25px;
+  float: left;
+  opacity: 1;
+  

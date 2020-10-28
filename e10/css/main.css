@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.board {
+  width: 820px;
+  display: flow-root;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.red, .black {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.red {
+  background-color:tomato;
+}
+.black {
+  background-color: #333333;
+}
+
+.column {
+  width: 900px;
+  display: flow-root;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: -10px;
+  margin-bottom: 400px;
+}
+.header, .title, .column, .col, .footer {
+  float: left;
+}
+.header {
+  background-color: red;
+  height: 100px;
+  width: 658px;
+  margin: 50px;
+  margin-bottom: -30px;
+}
+.title {
+  background-color: blue;
+  height: 20px;
+  width: 658px;
+  margin: 50px;
+  margin-bottom: 20px;
+}
+.col {
+  background-color: black;
+  width: 200px;
+  height: 600px;
+  margin: 50px;
+  margin-top: 5px;
+  margin-right: -20px;
+}
+.footer {
+  background-color: blue;
+  height: 90px;
+    width: 658px;
+    margin: 50px;
+    margin-bottom: 50px;
+    margin-top:-20px;
+}
+
+.blog {
+  width: 1200px;
+  display: flow-root;
+}
+.top, .box, .body, .bottom {
+  float: left;
+}
+.top {
+  width: 933px;
+  height: 200px;
+  margin: 120px 50px;
+  background-color: blue;
+}
+.box {
+  width: 650px;
+  height: 500px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  background-color: red;
+}
+.body {
+  width: 255px;
+  height: 250px;
+  margin: 20px;
+  background-color: black;
+}
+.bottom {
+  width: 651px;
+  height: 60px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  background-color: yellow;

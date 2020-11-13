@@ -1,3 +1,5 @@
+
+
 img {
  max-width: 100%;
  max-height: auto;
@@ -5,9 +7,8 @@ img {
  margin-top: 0px;
 }
 
-body{
-  margin:0;
-  overflow-x: hidden;
+body {
+  margin: 0px;
 }
 
 h1 {
@@ -16,31 +17,48 @@ h1 {
   color: white;
   font-size: 60px;
   margin: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 h2 {
   font-family: sans-serif;
   text-align: center;
   font-size: 40px;
 }
 
-.header {
+header {
   background-color: #658559;
-  width: 100%;
-  height: 100px;
   display: flow-root;
+  padding: 10px 50px
+  position: relative;
 }
 
+ main{
+   width: 100vw;
+   margin: 0px; auto;
+   display: flow-root;
+}
+  .title{
+    float:left;
+  }
+ .col {
+   width: 50%;
+   font-size: 21px;
+   float: left;
+ }
+#six{
+  margin-left: 55px;
+}
 .scene {
-  width: 40%;
-  max-height: 100vh;
-  margin-left: 274px;
+  width: 80%;
+  float: right;
   position: relative;
-  bottom: 70px;
-  margin-left: 840px;
+  bottom: 0px;
+  margin: 70px; auto;
+  margin-top: auto;
   }
 
-  .footer {
+ .footer {
   background-color:#658559;
   color: white;
   font-size: 18px;
@@ -52,7 +70,7 @@ h2 {
   margin-bottom: 0px;
 }
 p {
-  margin-left: 400px;
+  margin-left: 100px;
 }
 #main {
   text-align: center;
@@ -76,16 +94,11 @@ p {
   margin-left: -100px;
  }
 
- .navigation {
-  margin-left: 1050px;
-  width: 100%;
-  height: 0px;
-  word-spacing: 50px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  position: relative;
-  bottom: 60px;
+ nav {
+   float: right;
+   margin-top: 26px;
 }
+
 a:link {
   font-size: 30px;
   text-decoration: none;
@@ -97,15 +110,17 @@ a:visited {
 a:hover {
   color: #90EE90;
 }
-.col {
-  width: 700px;
-  display: flow-root;
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-top: 80px;
-  margin-bottom: -250px;
-  font-size: 21px;
+ul {
+  padding: 15px;
+  list-style-type: none;
+  margin-right: 38px;
+  font-family: sans-serif;
 }
+li {
+  float: left;
+  margin-left: 30px;
+}
+
 
 
 .about {
@@ -114,16 +129,30 @@ a:hover {
   height: 110px;
   display: flow-root;
 }
-  .nav {
-   margin-left: 1050px;
-   width: 100%;
-   height: 0px;
-   word-spacing: 50px;
-   text-transform: uppercase;
-   font-family: sans-serif;
-   position: relative;
-   bottom: 60px;
+.section {
+  padding: -10px;
+  margin-top: -70px;
+  position: relative;
+  bottom: 40px;
+}
+.seven {
+  margin-left: 55px;
+}
+.career {
+  width: 80%;
+  float: right;
+  position: relative;
+  bottom: 0px;
+  margin: 70px; auto;
+  margin-top: auto
  }
+
+
+
+
+
+
+
 
  .foot {
  background-color:#658559;
@@ -136,9 +165,7 @@ a:hover {
  display: flow-root;
  margin-bottom: 0px;
 }
-p {
- margin-left: 400px;
-}
+
 #ma {
  text-align: center;
  margin-left: 700px;
@@ -160,36 +187,6 @@ p {
  bottom: 61px;
  margin-left: -100px;
 }
-
- h3 {
-   font-family: sans-serif;
-   text-align: center;
-   font-size: 40px;
- }
-
- .pillar {
-   width: 720px;
-   display: flow-root;
-   margin-left: 50px;
-   margin-right: 100px;
-   margin-top: 80px;
-   margin-bottom: -250px;
-   font-size: 21px;
- }
-
- .career {
-   width: 40%;
-   max-height: 100vh;
-   margin-left: 835px;
-   position: relative;
-   bottom: 50px;
-   margin-top: 50px;
-}
-
- p5 {
-     font-family: sans-serif;
-     margin-top: 20px;
-}
  .box {
    position: relative;
    bottom: 160px;
@@ -202,4 +199,20 @@ p {
     bottom: 185px;
     margin-left: -310px;
     color: white;
+  }
+
+  @media screen and  (max-width: 1000px) {
+    .col {
+      width: 100%;
+      margin-bottom: 50px;
+      }
+      header {
+        width: 90vw;
+      }
+      main {
+        width: 90vw;
+      }
+      h1 {
+        font-size: 3rem;
+      }
   }

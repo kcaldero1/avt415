@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!-- Head section contains information about the page -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jordan Higgins">
+    <meta name="description" content="Assignment 4: Working with Javascript">
+    <title>Assignment 4: Working with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+<!-- styles needed for jQuery UI demos, uncomment the 2nd link if you download your own CSS -->
+<!-- we need the jquery UI css to style the interface widgets & animations -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" -->
+    <!-- link rel="stylesheet" href="jquery-ui.css" -->
+    <style>
+      #draggable { width: 150px; height: 150px; padding: 0.5em; }
+    </style>
+
+    <style>
+    #feedback { font-size: 1.4em; }
+    #selectable .ui-selecting { background: #FECA40; }
+    #selectable .ui-selected { background: #F39814; color: white; }
+    #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+    #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+    </style>
+
+    <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    </style>
+<!-- bring jquery & jquery UI into our web page from Google's CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+
+    $( function() {
+      $( "#draggable" ).draggable();
+    } );
+
+    $( function() {
+      $( "#selectable" ).selectable();
+    } );
+
+    $( function() {
+      $( "#slider" ).slider();
+    } );
+
+    $( function() {
+      var state = true;
+      $( "#button" ).on( "click", function() {
+     if ( state ) {
+       $( "#effect" ).animate({
+         backgroundColor: "#aa0000",
+         color: "#fff",
+         width: 500
+       }, 1000 );
+     } else {
+       $( "#effect" ).animate({
+         backgroundColor: "#fff",
+         color: "#000",
+         width: 240
+       }, 1000 );
+     }
+     state = !state;
+    });
+  } );
+
+    </script>
+  </head>
+  <body>
+<!-- Body section contains content displayed in web browser window -->
+
+  <h1>Assignment 4: Working with Javascript</h1>
+
+  <p>Here are 5 examples of jQuery UI components.</p>
+
+  <h2>Example 1: Datepicker</h2>
+<!-- HTML code for the datepicker widget -->
+  <p>Date: <input type="text" id="datepicker"></p>
+
+  <h2>Example 2: Draggable</h2>
+<!-- HTML code for the draggable widget -->
+  <div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+  </div>
+
+  <h2>Example 3: Selectable</h2>
+<!-- HTML code for the draggable widget -->
+<ol id="selectable">
+<li class="ui-widget-content">Item 1</li>
+<li class="ui-widget-content">Item 2</li>
+<li class="ui-widget-content">Item 3</li>
+<li class="ui-widget-content">Item 4</li>
+<li class="ui-widget-content">Item 5</li>
+<li class="ui-widget-content">Item 6</li>
+<li class="ui-widget-content">Item 7</li>
+</ol>
+
+  <h2>Example 4: Slider</h2>
+<!-- HTML code for the draggable widget -->
+  <div id="slider"></div>
+
+  <h2>Example 5: Animation</h2>
+<!-- HTML code for the draggable widget -->
+  <div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+  <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+  <p>
+    Thank you professor for being patient and allowing us to explore Web Design! Also for understanding our different skillsets!
+  </p>
+</div>
+</div>
+
+  <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+
+  </body>
+</html>

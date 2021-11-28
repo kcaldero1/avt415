@@ -1,0 +1,17 @@
+/* external style sheet for GitHub pages home page */
+/* contact jhiggin8@gmu.edu with questions! */
+
+body {
+  background-color: #ecebf3;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  color: #666666;
+}
+
+h2 {
+  font-size: 21px;
+  color: #666666;
+}
